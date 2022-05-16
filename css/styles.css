@@ -1,3 +1,31 @@
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
+      url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
+      url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-MediumItalic.woff2") format("woff2"),
+      url("../fonts/Poppins-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --text-color: #333333;
   --text-black-color: #000000;
@@ -30,11 +58,12 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
   background-color: #fff;
-  color: #000;
+  color: #9e9aa8;
 }
 
 img {
@@ -45,15 +74,73 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1150px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* HEADER */
+
+.header {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.header__container {
+  padding-right: 21px;
+  padding-left: 21px;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 46px;
+}
+.logo__img {
+  width: 120px;
+  height: 33px;
+}
+.sitenav {
+  margin-right: auto;
+}
+.sitenav__list {
+  display: flex;
+  align-items: center;
+}
+.sitenav__item {
+  list-style: none;
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 31px;
+}
+.sitenav__link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #9e9aa8;
+}
+.header__login {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  margin-right: 37px;
+  color: #9e9aa8;
+}
+.header__signup {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  margin-right: 37px;
+  color: #fff;
+  padding: 9px 24px;
+  border-radius: 28px;
+  background-color: #2bd0d0;
+}
 /* MAIN CONTENT */
 
-.main-content {
+.main-section {
   flex-grow: 1;
 }
