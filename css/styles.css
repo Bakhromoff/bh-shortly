@@ -95,6 +95,14 @@ img {
 }
 .logo {
   margin-right: 46px;
+  display: flex;
+  transition: opacity 0.4s ease;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
 }
 .logo__img {
   width: 120px;
@@ -106,9 +114,12 @@ img {
 .sitenav__list {
   display: flex;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 .sitenav__item {
   list-style: none;
+  display: flex;
 }
 .sitenav__item:not(:last-child) {
   margin-right: 31px;
@@ -119,6 +130,16 @@ img {
   font-size: 15px;
   line-height: 22px;
   color: #9e9aa8;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.sitenav__link:hover {
+  color: #34313d;
+}
+.sitenav__link:active {
+  opacity: 0.8;
+}
+.header__register{
+  margin-left: 20px;
 }
 .header__login {
   text-decoration: none;
@@ -127,6 +148,13 @@ img {
   line-height: 22px;
   margin-right: 37px;
   color: #9e9aa8;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.header__login:hover {
+  color: #34313d;
+}
+.header__login:active {
+  opacity: 0.8;
 }
 .header__signup {
   text-decoration: none;
@@ -138,7 +166,16 @@ img {
   padding: 9px 24px;
   border-radius: 28px;
   background-color: #2bd0d0;
+  margin: 0;
+  transition: opacity 0.4s ease;
 }
+.header__signup:hover {
+  opacity: 0.8;
+}
+.header__signup:active {
+  opacity: 0.6;
+}
+
 /* MAIN CONTENT */
 
 .main-section {
