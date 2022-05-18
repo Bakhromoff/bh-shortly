@@ -13,35 +13,84 @@
   <!-- HEADER -->
 
   <header class="header">
-<div class="container header__container">
-  <a class="header__logo logo" href="#"><img class="logo__img" src="img/logo.svg" alt="shortly logo" width="120" height="33"></a>
-  <nav class="header__sitenav sitenav">
-    <ul class="sitenav__list">
-      <li class="sitenav__item"><a class="sitenav__link" href="#">Features</a></li>
-      <li class="sitenav__item"><a class="sitenav__link" href="#">Pricing</a></li>
-      <li class="sitenav__item"><a class="sitenav__link" href="#">Resources</a></li>
-    </ul>
-  </nav>
-  <div class="header__register">
-    <a class="header__login" href="#">Login</a>
-    <a class="button button--small" href="#">Sign Up</a>
-  </div>
-</div>
+    <h1 class="visually-hidden">Url Shortener Api</h1>
+    <div class="container header__container">
+      <a class="header__logo logo" href="#"><img class="logo__img" src="img/logo.svg" alt="shortly logo" width="120" height="33"></a>
+      <nav class="header__sitenav sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a class="sitenav__link" href="#">Features</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#">Pricing</a></li>
+          <li class="sitenav__item"><a class="sitenav__link" href="#">Resources</a></li>
+        </ul>
+      </nav>
+      <div class="header__register">
+        <a class="header__login" href="#">Login</a>
+        <a class="button button--small" href="#">Sign Up</a>
+      </div>
+    </div>
   </header>
 
   <!-- HERO -->
-<hero class="hero">
-  <div class="container hero__container">
-    <div class="hero__content">
-<h2 class="hero__heading">More than just shorter links</h2>
-<p class="hero__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
-<a class="button hero__button" href="#">Get Started</a>
+  <hero class="hero">
+    <div class="container hero__container">
+      <div class="hero__content">
+        <h2 class="hero__heading">More than just shorter links</h2>
+        <p class="hero__text">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+        <a class="button hero__button" href="#">Get Started</a>
+      </div>
+      <img class="hero__img" src="img/worker.png" alt="man working with computer" srcset="img/worker.png 1x, img/worker@2x.png 2x" width="733" height="482">
     </div>
-    <img class="hero__img" src="img/worker.png" alt="man working with computer" srcset="img/worker.png 1x, img/worker@2x.png 2x" width="733" height="482">
-  </div>
-</hero>
+  </hero>
 
+  <!-- MAIN SECTION -->
 
-  <script src="js/main.js"></script>
-</body>
-</html>
+  <main class="main">
+    <div class="container">
+      <div class="shortener">
+        <form class="shortener__form" action="https://htmlacademy.ru" method="GET">
+          <input class="shortener__input" type="text" name="shorten" placeholder="Shorten a link here..." aria-label="Shorten a link here">
+          <button class="button button--shorter" type="submit">Shorten It!</button>
+        </form>
+      </div>
+      <section class="statistics">
+        <h2 class="statistics__heading">Advanced Statistics</h2>
+        <p class="statistics__text">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+        <ul class="statistics__list">
+          <li class="statistics__item">
+            <div class="statistics-item">
+              <div class="statistics-item__icon-wrapper">
+                <img class="statistics-item__icon" src="img/icon1.svg" alt="icon" width="40" height="40">
+              </div>
+              <div class="statistics-item__content">
+                <h3 class="statistics-item__title">Brand Recognition</h3>
+                <p class="statistics-item__text">Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+              </div>
+            </div>
+          </li>
+          <li class="statistics__item"><div class="statistics-item">
+            <div class="statistics-item__icon-wrapper">
+              <img class="statistics-item__icon" src="img/icon2.svg" alt="icon" width="40" height="40">
+            </div>
+            <div class="statistics-item__content">
+              <h3 class="statistics-item__title">Detailed Records</h3>
+              <p class="statistics-item__text">Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+            </div>
+          </div></li>
+          <li class="statistics__item">
+            <div class="statistics-item">
+              <div class="statistics-item__icon-wrapper statistics-item__icon-wrapper--last">
+                <img class="statistics-item__icon statistics-item__icon--last" src="img/icon3.svg" alt="icon" width="47" height="48">
+              </div>
+              <div class="statistics-item__content">
+                <h3 class="statistics-item__title">Fully Customizable</h3>
+                <p class="statistics-item__text">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+              </div>
+            </div></li>
+          </ul>
+          <div class="green-hr"></div>
+        </section>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
