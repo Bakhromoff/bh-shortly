@@ -208,9 +208,6 @@ img {
 
 /* HERO */
 
-.hero {
-
-}
 .hero__container {
   display: flex;
   align-items: center;
@@ -387,4 +384,135 @@ img {
   position: absolute;
   bottom: 315px;
   z-index: 0;
+}
+
+/* CTA */
+
+.cta {
+  background-color: var(--bg-img-color);
+  background-image: url(../img/features-bg.png);
+  background-size: cover;
+}
+.cta__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 57px;
+  padding-bottom: 57px;
+}
+.cta__heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -1px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #fff;
+}
+
+.cta__button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 13px 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.footer__container {
+  padding-top: 71px;
+  padding-bottom: 72px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  margin-right: auto;
+}
+
+.footernav {
+  display: flex;
+  flex-direction: column;
+
+}
+.features {
+  margin-right: 77px;
+  margin-left: 30px;
+}
+.resources {
+  margin-right: 106px;
+}
+.company {
+  margin-right: 100px;
+}
+.footernav__title {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+  color: #fff;
+}
+.footernav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.footernav__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.footernav__link {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 22px;
+  color: var(--footer-nav-color);
+  transition: color 0.4s ease;
+}
+.footernav__link:hover {
+  color: var(--accent-color-lightgreen);
+}
+.socials {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.socials__item:not(:last-child) {
+  margin-right: 24px;
+}
+.socials__link {
+  display: flex;
+  color: #fff;
+  transition: color 0.4s ease;
+}
+.socials__link:hover {
+  color: var(--accent-color-lightgreen);
+}
+
+/* MEDIA */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .features {
+    background-image: url(../img/features-bg@2x.png);
+    background-size: cover;
+  }
+  .shortener {
+    background-image: url(../img/shortener-bg@2x.png);
+    background-size: contain;
+  }
 }
