@@ -267,6 +267,7 @@ img {
   background-image: url(../img/shortener-bg.png);
   background-size: contain;
   margin-top: -84px;
+  margin-bottom: 24px;
 }
 .shortener__input-wrapper {
   position: relative;
@@ -312,12 +313,52 @@ img {
 .shortener__input:focus:not(:placeholder-shown):invalid ~ .shortener__error-message {
   display: block;
 }
-
 .button--shorter {
   padding: 17px 40px;
   border-radius: 10px;
   font-size: 20px;
   line-height: 30px;
+}
+
+.shortener__results {
+
+}
+.shortener__result {
+  padding: 16px 24px 16px 32px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.shortener__result:not(:last-child) {
+  margin-bottom: 16px;
+}
+.shortener__original-link {
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: var(--text-color-dark);
+}
+.shortener__short-link {
+  margin-right: 24px;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: right;
+  letter-spacing: 0.15px;
+  color: var(--accent-color-lightgreen);
+  text-decoration: none;
+}
+
+.shortener__button {
+  padding: 10px 31px 7px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  border-radius: 5px;
 }
 
 /* STATISTICS */
