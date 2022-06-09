@@ -46,9 +46,15 @@
 
   <main class="main">
     <div class="container">
+
+      <!-- SHORTENER -->
+
       <div class="shortener">
-        <form class="shortener__form" action="https://htmlacademy.ru" method="GET">
-          <input class="shortener__input" type="text" name="shorten" placeholder="Shorten a link here..." aria-label="Shorten a link here">
+        <form class="shortener__form" action="https://htmlacademy.ru" method="POST">
+          <div class="shortener__input-wrapper">
+            <input class="shortener__input" type="url" name="url" placeholder="Shorten a link here..." aria-label="Shorten a link here" pattern="[Hh][Tt][Tt][Pp][Ss]?:\/\/(?:(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)(?:\.(?:[a-zA-Z\u00a1-\uffff0-9]+-?)*[a-zA-Z\u00a1-\uffff0-9]+)*(?:\.(?:[a-zA-Z\u00a1-\uffff]{2,}))(?::\d{2,5})?(?:\/[^\s]*)?" required>
+          <div class="shortener__error-message">Please add a link</div>
+        </div>
           <button class="button button--shorter" type="submit">Shorten It!</button>
         </form>
       </div>
